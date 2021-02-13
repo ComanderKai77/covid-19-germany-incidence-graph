@@ -27,3 +27,9 @@ jobs:
       
       - name: Run script
         run: python3 update.py
+      
+      - name: Commit data
+        run: |
+          git add .
+          git commit -m "Updated data"
+          git push
