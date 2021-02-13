@@ -7,17 +7,17 @@
 [TOC]
 
     
-### SK Flensburg###
+### SK Flensburg ###
 
 ![SK Flensburg](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20Flensburg.svg)
         
     
-### SK Kiel###
+### SK Kiel#
 
 ![SK Kiel](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20Kiel.svg)
         
     
-### SK Lübeck###
+### SK Lübeck #
 
 ![SK Lübeck](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20L%C3%BCbeck.svg)
         
