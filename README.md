@@ -1,4 +1,4 @@
-# covid-19-germany-incidence-graph #
+# Covid-19 Germany incidence graph
 
 ![Update Data](https://github.com/ComanderKai77/covid-19-germany-incidence-graph/workflows/Update%20Data/badge.svg?branch=master)
 
