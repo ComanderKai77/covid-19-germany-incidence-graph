@@ -30,7 +30,8 @@ jobs:
       
       - name: Commit data
         run: |
+          git config user.name "Update Bot"
+          
           git add .
           git commit -m "Updated data"
-          git config user.name "Update Bot"
           git push
