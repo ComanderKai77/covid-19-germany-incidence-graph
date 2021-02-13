@@ -22,14 +22,27 @@ def create_content(name):
         
     """
 
-file = get_header()
-regions = get_regions()
-for region in regions:
-    if not "population" in regions[region]:
-        continue
+def get_cities_list():
+    cities = []
+    regions = get_regions()
+    for region in regions:
+        if not "population" in regions[region]:
+            continue
 
-    file += create_content(regions[region]["name"])
+        cities.append(regions[region]["name"])
+    
+    cities.sort()
+    return cities
 
-f = open("cities.md", "w")
-f.write(file.strip())
-f.close()
+def generate_file():
+    file = get_header()
+
+    cities = get_cities_list()
+    for city in cities:
+        file += create_content(city)
+
+    f = open("cities.md", "w")
+    f.write(file.strip())
+    f.close()
+
+generate_file()
