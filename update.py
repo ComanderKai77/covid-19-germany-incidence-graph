@@ -1,6 +1,7 @@
 import dateutil.parser as dp
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import os
 import requests
 from io import StringIO
 import sys
@@ -79,6 +80,9 @@ start_time = t.time()
 
 regions = get_regions()
 data = get_data()
+
+if not os.path.exists("graphics"):
+    os.makedirs("graphics")
 
 for region in regions:
     time, incidence = calc(data, regions[region], region)
