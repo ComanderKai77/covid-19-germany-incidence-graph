@@ -12,12 +12,12 @@
 ![Image of Yaktocat](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20Flensburg.svg)
         
     
-###SK Kiel###
+###SK Kiel#
 
 ![Image of Yaktocat](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20Kiel.svg)
         
     
-###SK Lübeck###
+###SK Lübeck#
 
 ![Image of Yaktocat](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/SK%20L%C3%BCbeck.svg)
         
