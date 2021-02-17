@@ -9,18 +9,10 @@ def get_regions():
     return requests.get(REGION_PATH).json()
 
 def get_header():
-    return """
-# Cities #
+    return "# Cities \n"
 
-    """
-
-def create_content(name):
-    return """
-### """ + name + """ ###
-
-![""" + name + """](""" + BASE_PATH + urllib.parse.quote(name) + """.svg)
-        
-    """
+def create_content(name, population):
+    return "### {0} (Einwohner: {1})\n\n![{0}]({2}.svg)\n\n".format(name, population, BASE_PATH + urllib.parse.quote(name))
 
 def get_cities_list():
     cities = []
@@ -28,10 +20,9 @@ def get_cities_list():
     for region in regions:
         if not "population" in regions[region]:
             continue
+        cities.append([regions[region]["name"], regions[region]["population"]])
 
-        cities.append(regions[region]["name"])
-    
-    cities.sort()
+    cities.sort(key=lambda city: city[0])
     return cities
 
 def generate_file():
@@ -39,10 +30,10 @@ def generate_file():
 
     cities = get_cities_list()
     for city in cities:
-        file += create_content(city)
+        file += create_content(*city)
 
     f = open("cities.md", "w")
-    f.write(file.strip())
+    f.write(file)
     f.close()
 
 generate_file()
