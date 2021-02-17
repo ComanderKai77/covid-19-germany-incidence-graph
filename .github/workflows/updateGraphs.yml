@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
   
   schedule:
-    # Run at 11:00 every day
-    - cron: "0 11 * * *"
+    # Run at 9:00 every day
+    - cron: "0 9 * * *"
 
 jobs:
   update:
