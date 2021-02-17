@@ -21,3 +21,5 @@ All cities can be found [here](https://github.com/ComanderKai77/covid-19-germany
 ## Example
 
 ![LandKreis Lüneburg](https://raw.githubusercontent.com/ComanderKai77/covid-19-germany-incidence-graph/master/graphics/LK%20L%C3%BCneburg.svg) 
+
+## [Alle Städte | All cities](https://github.com/ComanderKai77/covid-19-germany-incidence-graph/blob/master/cities.md)
