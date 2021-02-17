@@ -9,10 +9,11 @@ def get_regions():
     return requests.get(REGION_PATH).json()
 
 def get_header():
-    return "# Cities \n"
+    return "# Cities \n\n"
 
 def create_content(name, population):
-    return "### {0} (Einwohner: {1})\n\n![{0}]({2}.svg)\n\n".format(name, population, BASE_PATH + urllib.parse.quote(name))
+    population_formatted = "{:,}".format(population).replace(",", ".")
+    return "### {0} (Einwohner: {1})\n\n![{0}]({2}.svg)\n\n".format(name, population_formatted, BASE_PATH + urllib.parse.quote(name))
 
 def get_cities_list():
     cities = []
